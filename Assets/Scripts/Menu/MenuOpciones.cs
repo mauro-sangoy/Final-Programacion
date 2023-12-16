@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class MenuOpciones : MonoBehaviour
 {
-    [SerializeField] private AudioMixer AudioJuego;
+    [SerializeField] private AudioMixer AudioT;
     public void PantallaCompleta(bool PantallaCompleta) 
     {
         Screen.fullScreen = true;
@@ -13,7 +13,7 @@ public class MenuOpciones : MonoBehaviour
 
     public void SubirVolumen(float Volumen) 
     {
-        AudioJuego.SetFloat("Volumen", Volumen);
+        AudioT.SetFloat("Volumen", Volumen);
     }
 
 }
